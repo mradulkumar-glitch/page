@@ -1,9 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>FIERCENETWORK INDEX</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
 </head>
-<body background="https://wallpaperaccess.com/full/201322.jpg" w="1280" height="720" border="1" width="1280"> 
-<p>♦️♦️♦️♦️A-A-A-A-A♦️♦️♦️♦️</p>
-<p><a href="https://t.me/fiercenetwork/13891">📌 Attack On Titan</a></p>
+<style>
+  body {background-color: powderblue;}
+  h1   {color: blue;}
+  p    {color: red; text-align: center;}
+  input {color: black; text-align: center;}
+  input {
+  font-family: "Times New Roman", Times, serif;}
+
+  </style>
+<body>
+  <form>  
+  Number : <div><input style="background-color:palegoldenrod; type="text" id="number1" name="number1"></div>
+  Number 2 : <div><input type="text" id="number2" name="number2"></div><br>
+  Sum: <input type="text" name="sum"><br>
+  <input type="button" value="Sum" onclick="calcSum()">
+  </form>
+  <script>
+    function calcSum() {
+        let num1 = document.getElementsByName("number1")[0].value;
+        let num2 = document.getElementsByName("number2")[0].value;
+        let sum = String(num1) + String(num2);
+        document.getElementsByName("sum")[0].value = sum;
+    }
+</script>
 </body>
-</html> 
+</body>
+</html>
