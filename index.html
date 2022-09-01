@@ -6,30 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
 </head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
-  body {background-color: powderblue;}
-  h1   {color: blue;}
-  p    {color: red; text-align: center;}
-  input {color: black; text-align: center;}
-  input {
-  font-family: "Times New Roman", Times, serif;}
+  body {background-image: url('https://wallsbazar.com/wp-content/uploads/2022/03/Anime-Landscape-Wallpaper.jpg'); max-width:100%;height:auto;}
+  .lol {padding-right: 12px; line-height: 3px; font-family: "Sofia"; color: bisque;}
+  div {padding-top: 20px; padding-right: 45px; padding-bottom: 20px; padding-left: 20px;}
+  input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-family: "Sofia";
+  font-size: small;
+  border-color: rgb(0, 195, 255);
+  border-width: 3px;
+  border-radius: 9px;
+  box-sizing: content-box;}
+  input[type=button] {
+  width: 15%;
+  padding: 18px 20px;
+  box-shadow: 4px;
+  font-size: medium;
+  font-family: "Sofia";
+  margin: 8px 0;
+  box-shadow: 10px;
+  box-sizing: border-box;}
+  #hue{
+  position: absolute;
+  right: 30%;
+  font-family: "Sofia";
+  
+  font-size: 30px;
+  color: blanchedalmond;
+  }  
 
-  </style>
+</style>
 <body>
-  <form>  
-  Number : <div><input style="background-color:palegoldenrod; type="text" id="number1" name="number1"></div>
-  Number 2 : <div><input type="text" id="number2" name="number2"></div><br>
-  Sum: <input type="text" name="sum"><br>
-  <input type="button" value="Sum" onclick="calcSum()">
-  </form>
+  <div class="lol"><strong> Number 1 : </strong><input type="text" id="number1" name="number1"></div><br>
+  <div class="lol"><strong> Number 2 : </strong><input type="text" id="number2" name="number2"></div><br>
+  <div class="lol" id="sums"><strong> Sum : </strong><input type="text" name="sum"></div><br>
+  <div><input id="lel" type="button" value="Sum" onclick="calcSum()"></div><br>
+  <div id="hue"><p>PULL UP ON YOU LIKE AGENCY</p>
   <script>
     function calcSum() {
         let num1 = document.getElementsByName("number1")[0].value;
         let num2 = document.getElementsByName("number2")[0].value;
         let sum = Number(num1) + Number(num2);
-        document.getElementsByName("sum")[0].value = sum;
-    }
-</script>
+        document.getElementsByName("sum")[0].value = sum; }
+  </script>
 </body>
 </body>
 </html>
