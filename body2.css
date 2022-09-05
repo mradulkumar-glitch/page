@@ -1,0 +1,90 @@
+/* font-family: 'Comic Neue', cursive; */
+.collapse {
+	font-family: 'Comic Neue', cursive;
+	font-size: 14px;
+	color: #131414;
+	line-height: 1.5;
+     padding: 3px;
+	
+}
+
+img {
+	border-radius: 20px;
+  	width: 50px;
+	padding: 10px;
+}
+.navbar-brand {
+	display: inline-block;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	font-family:'Source Sans Pro', sans-serif ;
+	line-height: inherit;
+	white-space: nowrap;
+	
+}
+body{
+	background-color: #343a40;
+}
+.container {
+	font-family: 'Source Sans Pro', sans-serif;
+	position: absolute;
+	color: antiquewhite;
+	margin: auto;
+    width: 80%;
+    padding: 10px;
+	text-align: center;
+	background-color:#1c1f1f;
+}
+.collapsible {
+	background-color: #343a40;
+	color: white;
+	font-family: 'Comic Neue';
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 25px;
+  }
+  
+  .collapsible:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active, .collapsible:hover {
+	background-color: #555;
+  }
+  .active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+  } 
+  
+  .content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #2e353b;}
+
+#para {
+	font-family: 'Comic Neue';
+	margin: auto;
+    width: 80%;
+    padding: 4px;
+	font-size: 30px;
+	color: antiquewhite;
+	text-align: center;
+
+}
+.titles {
+	font: 14px;
+	color: cornsilk;
+	font-family: 'Comic Neue';
+	margin-top: 4px;
+}
